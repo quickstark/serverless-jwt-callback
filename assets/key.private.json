@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "audience-quiz-270221",
+  "private_key_id": "53b5434f751fab19bac33345fff6e7d4544c498e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDrbYlkLQMO48cc\nRfODKPyvyp2NpN3lisdTkDrbvSmQt7hDoUMPq1K+ylNgKRPud/Vats1mwPSbcimM\nGnlYAaja8oxjqhneWSycWegpzpQNa1TgMGzpOcrz4OGHbuu7TBdXt9Oi4IN8shXL\nySNmbY9eR1fOeVK29ZdHfgzekiijJZ8Ubzl4wSIUE7xrV220aX3KZf/zde2Z5WOI\nd+Mka7QFSuec49hUNjrR8rOabKnaBTkpr0dbPt5dp75OnBEiDdxpPA0GgPFtaiOx\nuNC0n6foMD/BE3a9DJLZFQeDXh/b7AA7wu6kL7/unS/uUj2leRP33FnPBzMPVM2E\njllinN9LAgMBAAECggEAZv8PZf+ZQGjfQZvKyp1iWwfyALdZiqQ5yvGlBmBN8G2n\n1BKXc6H4u9ZpPn8KJMBfW1XxK5yMBvudeJlWb+2d8Ve+mpWe5pstvKNKwguJ0wsb\nYU9ePnSVuTcvg6A/yjuiVLJsCOxfKe0BQxvWfGe/GrhsjjyetsNf8RuQxsi7tY+X\no8yqBJJoSpOW0g9A4RwD3WKB1j8c34T09H2L7OScjfx+/hYZTSQ4c0Zu8UAvNLhh\nuchoqZIXqTA6DWlwpXnUlaL0xEgyC/Lv4Vu7yccyeyvD7QZLDjkw0iGo2akW7NRY\ntqfLMAPiszBtFDUtVjThcjlErVWdr7xzNEmFioZJUQKBgQD4fFosARWqNVvRwgoA\nR5Ay1k3VRAOHxczCrI6w6l/yT7znoAw/o+MnwwkiV0LIKguvjAFTroCKwGcCQZfJ\n57aesmuz2WT8TRX8ix793HdtWUp3hNR2MoGq77rw+EsnUt4Yt0mt1AzYPumZkd2c\n3qX8eOMbs4XZPUdjBM8xlH3dewKBgQDyjBjgMBItNmwCjsiRiwmrOnehdkEdVcGY\nh2w+bs9WIWwUdL7HsSC+DWZl5NW9+3Y+3hzKAlGOByhSP6fzQQPlNDVi/cBnZRR/\nQb9mGxLYujDXNMsKIEMC6wWRouRbj2VPzzhtdDN4aVHXmQMrmNpjwDfmnSpnGU6Q\no/I6thmUcQKBgH3AAKowSlR++F6owgLuNG1lwrHg36CAW2VRikzB75hi/giCGHDE\ncZqXuzGj02oUzSEjyzAcKXUOdZLQuw40s1iQlqzHobGFGVFa3m4+ejnebC8cC6Fd\nYf2toH9+SBo4d6kuaJ0NqQpunC1Zgjt2+a1RSC2mpmAQAOZ9cpV2vlOtAoGANlgl\nirW6nN7AvKH5VoLsm6zx+P9h/4yjX+WX3zU8x3Odn8e4p02MpIikFNh8+6BIEjX6\nBVkXpNb9tdAFdX9vu/9CpvdsEL6ZJRo6JEqUonK1VsLBa3dnDFRUXxk8STeL36Hy\nZrPOhIA0kjX6e943sHn1DHrScV8+NzJEp9r9SEECgYEAlZpQus8rnM0axOTCPxMe\nE1likq2ZHyCPp465hIxem+2fRSnKIzgZUNH5D3GgA610LhOnu37CBDS5KH30Je0T\nZc0E1gqj84dZXx33uD1TCzteQODyOvCG93bodF1gyqttCNz0PuSKx7+zqo7mG0Gd\nyO1e1/mYtJsEFnugAiCT3f4=\n-----END PRIVATE KEY-----\n",
+  "client_email": "audiencequiz@audience-quiz-270221.iam.gserviceaccount.com",
+  "client_id": "117293884038437354947",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/audiencequiz%40audience-quiz-270221.iam.gserviceaccount.com"
+}
