@@ -26,7 +26,7 @@ This uses the [Twilio CLI](https://www.twilio.com/docs/twilio-cli/quickstart) wi
     twilio serverless:deploy
     ```
 
-6b. Once deployed, visit your [Twilio Console](https://www.twilio.com/console/functions/overview/services) click on the service link and grab the URL for the Function and path - https://jwt-callback-NNNN-dev.twil.io/google_callback
+6b. Once deployed, visit your [Twilio Console](https://www.twilio.com/console/functions/overview/services) click on the service link and grab the URL for the Function and path - `zsh https://jwt-callback-NNNN-dev.twil.io/google_callback`
 
 7.  Alternatively, you can run this locally for testing. See [Developing with the Serverless Toolkit](https://www.twilio.com/docs/labs/serverless-toolkit/developing?code-sample=code-run-a-serverless-project-locally&code-language=twilio-cli&code-sdk-version=default)
 
