@@ -1,5 +1,5 @@
 {
-  "name": "jwt-callback",
+  "name": "serverless-jwt-callback",
   "version": "0.0.0",
   "private": true,
   "scripts": {
