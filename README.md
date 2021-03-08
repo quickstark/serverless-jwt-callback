@@ -6,29 +6,19 @@ This uses the [Twilio CLI](https://www.twilio.com/docs/twilio-cli/quickstart) wi
 
 ## Installation
 
-1.  Create a new Twilio Servless Project using the Twilio CLI
+1.  Clone this repo
 
-    ```zsh
-    twilio serverless:init <name>
-    ```
+2.  Copy the key from Google Step 2 (below) into the assets folder of your function (rename to key.private.json)
 
-2.  You can remove all example functions/files from the assets and functions folders
-
-3.  Copy the _google_callback.js_ function to the functions folder
-
-4.  Copy the _package.json_ file into the root directory
-
-5.  Copy the key from Google Step 2 (below) into the assets folder of your function (rename to key.private.json)
-
-6.  Deploy the Serverless Function using Twilio CLI
+3.  Deploy the Serverless Function using Twilio CLI
 
     ```zsh
     twilio serverless:deploy
     ```
 
-6b. Once deployed, visit your [Twilio Console](https://www.twilio.com/console/functions/overview/services) click on the service link and grab the URL for the Function and path - `https://jwt-callback-NNNN-dev.twil.io/google_callback`
+3b. Once deployed, visit your [Twilio Console](https://www.twilio.com/console/functions/overview/services) click on the service link and grab the URL for the Function and path - `https://jwt-callback-NNNN-dev.twil.io/google_callback`
 
-7.  Alternatively, you can run this locally for testing. See [Developing with the Serverless Toolkit](https://www.twilio.com/docs/labs/serverless-toolkit/developing?code-sample=code-run-a-serverless-project-locally&code-language=twilio-cli&code-sdk-version=default)
+4.  Alternatively, you can run this locally for testing. See [Developing with the Serverless Toolkit](https://www.twilio.com/docs/labs/serverless-toolkit/developing?code-sample=code-run-a-serverless-project-locally&code-language=twilio-cli&code-sdk-version=default)
 
 ## Basics for Google Auth Key
 

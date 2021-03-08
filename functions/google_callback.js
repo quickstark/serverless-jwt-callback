@@ -15,14 +15,12 @@ exports.handler = function (context, event, callback) {
   let KEY = JSON.parse(data);
   console.log(KEY.type);
 
-  //twiml for testing
+  //TWIML just to verify we finished
   const twiml = new Twilio.twiml.MessagingResponse();
 
   //the event we're processing
   console.log("***** RAW Event *****");
   console.log(Object.values(event));
-
-  let values = [Object.values(event)];
 
   //Setup Google JWT
   const jwtClient = new google.auth.JWT(
@@ -33,46 +31,57 @@ exports.handler = function (context, event, callback) {
     null
   );
 
-  async function getGoogleSheetData() {
-    await jwtClient.authorize();
-    const request = {
-      // The ID of the spreadsheet to retrieve data from.
-      spreadsheetId: "1t3WgEnkpGbPEZFH4yjR4IIRM_OTz4O7usUllo_uWHg4",
-
-      // The A1 notation of the values to retrieve.
-      range: "A1:D1",
-      auth: jwtClient,
-    };
-    return await sheets.spreadsheets.values.get(request);
-  }
-
-  async function postGoogleSheetData() {
-    await jwtClient.authorize();
-    const request = {
-      // The ID of the spreadsheet to post data to.
-      spreadsheetId: "1t3WgEnkpGbPEZFH4yjR4IIRM_OTz4O7usUllo_uWHg4",
-      auth: jwtClient,
-      range: "Sheet1",
-      valueInputOption: "USER_ENTERED",
-      resource: { values },
-    };
-    return await sheets.spreadsheets.values.append(request);
-  }
-  /*
-  getGoogleSheetData().then((res) => {
-    console.log(res.data.values[0][0]);
-    twiml.message(res.data.values[0][0]);
-    callback(null, twiml);
-  });
-*/
-
+  // Execute the Post using the post function
   postGoogleSheetData(event)
     .then((res) => {
       console.log(res);
-      twiml.message("Finished Posting");
+      twiml.message("Finished Posting to Google");
       callback(null, twiml);
     })
     .catch((err) => {
       console.log(err);
     });
 };
+
+/**
+ * Placeholder function to get data from Google Sheets
+ *
+ * @returns Nothing
+ */
+async function getGoogleSheetData() {
+  await jwtClient.authorize();
+  const request = {
+    // The ID of the spreadsheet to retrieve data from.
+    spreadsheetId: "1t3WgEnkpGbPEZFH4yjR4IIRM_OTz4O7usUllo_uWHg4",
+
+    // The A1 notation of the values to retrieve.
+    range: "A1:D1",
+    auth: jwtClient,
+  };
+  return await sheets.spreadsheets.values.get(request);
+}
+
+/**
+ * Post Twilio Events to Google Sheets using JWT Auth
+ *
+ * @returns
+ */
+async function postGoogleSheetData() {
+  await jwtClient.authorize();
+  const request = {
+    // The ID of the spreadsheet to post data to.
+    spreadsheetId: "1t3WgEnkpGbPEZFH4yjR4IIRM_OTz4O7usUllo_uWHg4",
+    auth: jwtClient,
+    range: "Sheet1",
+    valueInputOption: "USER_ENTERED",
+    resource: { values },
+  };
+  return await sheets.spreadsheets.values.append(request);
+}
+/*
+  getGoogleSheetData().then((res) => {
+    console.log(res.data.values[0][0]);
+    twiml.message(res.data.values[0][0]);
+    callback(null, twiml);
+  });
+*/
