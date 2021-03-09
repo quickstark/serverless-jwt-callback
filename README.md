@@ -1,6 +1,9 @@
 # Twilio Serverless JWT Callback
 
-This is just a simple Twilio Serverless Function to demonstrate authenticating callbacks/webhooks to Google Sheets
+Twilio Serverless Function to demonstrate JWT Oauth callbacks/webhooks to Box and Google Sheets
+
+**Important: Twilio Functions are limited to ~20 executions / second, so this is purely for demonstration and/or
+relatively light use cases**
 
 This uses the [Twilio CLI](https://www.twilio.com/docs/twilio-cli/quickstart) with the [Twilio Serverless Plugin](https://www.twilio.com/docs/twilio-cli/plugins)
 
@@ -14,6 +17,12 @@ This uses the [Twilio CLI](https://www.twilio.com/docs/twilio-cli/quickstart) wi
 
     ```zsh
     twilio serverless:deploy
+    ```
+
+    _Following initial deploy, if you want to overwrite an existing project_
+
+    ```zsh
+    twilio serverless:deploy --override-existing-project
     ```
 
 4.  Once deployed, visit your [Twilio Functions](https://www.twilio.com/console/functions/overview/services) click on the service link and grab the URL for the Function and path - `https://jwt-callback-NNNN-dev.twil.io/google_callback`
